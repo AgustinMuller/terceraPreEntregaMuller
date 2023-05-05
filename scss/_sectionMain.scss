@@ -1,0 +1,25 @@
+.parrafoMain {
+    background-image: url(../assets/img/header.jpg);
+    background-position: center;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Tilt Prism;
+    overflow: hidden;
+    .parrafoUno {
+        margin-top: 0%;
+        }
+}
+
+@media (max-width:600px) {
+    .parrafoMain {
+        font-size: 21px;
+
+    }
+}

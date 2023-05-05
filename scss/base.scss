@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,900&family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import "_bodyIndex";
+@import "_main";
+@import "_footerIndex";
+@import "_sectionMain";
+@import "_MainContactos";
+@import "_bodyContacto";
+@import "_footerContacto";
+@import "_bodyCuriosidades";
+@import "_mainCuriosidades";
+@import "_footerCuriosidades";
+@import "_bodyImagenes";
+@import "_mainIMagenes";
+@import "_footerImagenes";
+@import "_bodyHistoria";
+@import "_mainHistoria";
+
+
+
+
+@media (max-width: 600px) {
+    .izquierda {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .derecha {
+        font-size: 15px;
+        text-align: center;
+        height: 70vh;
+    }
+}
+

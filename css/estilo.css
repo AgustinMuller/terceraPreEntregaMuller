@@ -16,6 +16,7 @@ body {
     background-color: #ffffff;
     margin: 0;
     margin-right: 0;
+    margin-left: 0;
 }
 
 .bodyText {
@@ -27,6 +28,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
+    margin: 0;
 
 }
 
@@ -93,7 +95,7 @@ body {
 }
 
 
-.tamaniologo {
+.tamanioLogo {
     width: 200px;
 }
 
@@ -102,6 +104,21 @@ body {
     height: 50%;
     object-fit: cover;
 
+}
+
+.img-fluid{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border-color: #ffffff;
+}
+
+.tituloImagenes{
+    color: white;
+    text-align: center;
+    
 }
 
 .card-group {
@@ -116,6 +133,7 @@ body {
     background-size: cover;
     margin-top: 0;
     height: 50vh;
+    color: white;
 }
 
 @media (max-width: 600px) {
@@ -124,11 +142,13 @@ body {
     }
 }
 
+.sectionCarousel{
+    color: white;
+}
 
 .derecha {
     height: 50vh;
     border: 1px white;
-    background-color: #333030;
     justify-content: center;
     color: white;
     object-position: center;
@@ -143,6 +163,12 @@ body {
         text-align: center;
         height: 70vh;
     }
+}
+
+.curiosidades{
+    width: 100%;
+    align-items: center;
+    object-position: center;
 }
 
 
@@ -278,43 +304,70 @@ body {
     width: 100%;
     padding: 0;
     background-size: 400px;
-    background-image: url(../assets/img/Curiosidades.jpg);
+
 
 }
 
 
 .mainImagenes {
-    background-image: url(../assets/img/Curiosidades.jpg);
+    background-color: #000000;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-left: 10;
 }
 
 
 .mainCuriosidades {
-    background-color: #1b141f;
-    font-size: 20px;
-    height: 100%;
-    background-image: url(../assets/img/Curiosidades.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    text-align: center;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 0;
+    background-size: 400px;
+    background-image: url(../assets/img/Curiosidades.jpg);
 
 }
+
 
 .mainContacto {
-    height: 0%;
-    background-color: #1b141f;
-
+    background-color: #000000;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: white;
+    margin-left: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
 }
 
+@media (max-width:600px){
+    .mainContacto {
+        background-color: #000000;
+        background-size: 600px;
+        background-image: url(../assets/img/Fondo\ Contacto.jpg);
+        padding: auto;
+    }
+}
 
+.formularioContacto{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.fuenteFormulario {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
 
 .imagenesMainCuriosidades {
     height: 40%;
     text-align: center;
 }
+
 
 .marginHr {
     padding-top: 10px;
@@ -326,8 +379,6 @@ body {
 hr {
     margin: 0;
 }
-
-
 
 
 .redesSociales {
@@ -358,6 +409,35 @@ hr {
     width: 100%;
 }*/
 
+.footerContacto{
+    background-color: #333030;
+    width: 100%;
+    padding: 0;
+    margin: 20;
+    height: 25vh;
+    margin-top: 100px;
+    padding-left:0;
+}
+
+.footerHistoria{
+    background-color: #333030;
+    width: 100%;
+    padding: 0;
+    margin: 20;
+    height: 35vh;
+    margin-top: 100px;
+    padding-left:0;
+}
+
+
+@media (max-widht:600px) {
+    .footerContacto{
+        height: 100vh;
+    }
+}
+
+
+
 .tituloAcordeon {
     text-align: center;
 }
@@ -367,19 +447,19 @@ hr {
     padding-top: 0%;
 }
 
-.linkRedes {
+/*.linkRedes {
     height: 50px;
     font-size: 20px;
     text-decoration: none;
 
-}
+}*/
 
 .icon {
     color: white;
 }
 
 .imagenesTamano {
-    width: 100vh;
+    width: 1000px;
     margin-left: 25.5%;
     display: inline-block;
     padding: 0%;
@@ -387,7 +467,6 @@ hr {
 
 .parrafoMain {
     background-image: url(../assets/img/header.jpg);
-    height: 50vh;
     background-position: center;
     text-align: center;
     font-size: 30px;
@@ -408,8 +487,6 @@ hr {
 
     }
 }
-
-
 
 .parrafoUno {
     margin-top: 0%;
@@ -446,9 +523,3 @@ hr {
     padding-right: 5%;
 }
 
-.formularioContacto {
-    display: inline-block;
-    margin-left: 3%;
-    margin-top: 2%;
-    height: 100%;
-}
